@@ -12,13 +12,13 @@ Once you have cloned the project run:
 
 > docker exec -it task_php bash -c "composer install"
 
-> docker exec -it task_php bash -c "chmod -R 777 -R ./storage/."
+> docker exec -it task_php bash -c "chmod -R 755 -R ./storage/."
 
 
 You can access the customer phones view through:
 > http://localhost:8000
 
-## Unit-Test
+## Tests
 
 To run the tests you can run:
 > docker exec -it task_php bash -c "vendor/bin/phpunit"
